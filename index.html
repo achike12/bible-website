@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Online Bible</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>📖 Online Bible</h1>
+
+<input id="search" placeholder="Search verse...">
+<button onclick="searchVerse()">Search</button>
+
+<button onclick="toggleDark()">Dark Mode</button>
+</header>
+
+<div class="controls">
+
+<select id="bookSelect"></select>
+
+<input id="chapterInput" type="number" placeholder="Chapter">
+
+<button onclick="loadChapter()">Read</button>
+
+</div>
+
+<div id="dailyVerse"></div>
+
+<div id="verses"></div>
+
+<h2>Bookmarks</h2>
+<div id="bookmarks"></div>
+
+<script src="books.js"></script>
+<script src="bibleapi.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
